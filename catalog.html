@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Nav Section -->
+    <nav>
+        <h1>Catálogo</h1>
+        <div class="carrito">
+            <img src="imagen/carrito.png" alt="Carrito de compras" class="icono-carrito">
+            <span id="carrito-contador">0</span>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <main>
+        <section class="sushicatalog">
+            <div class="sushisection">
+                 <img src="imagen/sushipollo.jpg" alt="sushipollo" onclick="openModal('imagen/sushipollo.jpg', 'Handroll de Pollo', '$5.500')">
+                 <h3>Handroll de Pollo</h3>
+                 <p class="price">$5.500</p>
+                 <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+            <div class="sushisection">
+                <img src="imagen/sushicamaron.jpg" alt="sushicamaron" onclick="openModal('imagen/sushicamaron.jpg', 'Handroll de Camarón', '$5.900')">
+                <h3>Handroll de Camarón</h3>
+                <p class="price">$5.900</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+            <div class="sushisection">
+                <img src="imagen/sushix20.jpg" alt="sushix20" onclick="openModal('imagen/sushix20.jpg', 'Sushi x20', '$10.500')">
+                <h3>Sushi x20</h3>
+                <p class="price">$10.500</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+            <div class="sushisection">
+                <img src="imagen/sushix35.jpg" alt="sushix35" onclick="openModal('imagen/sushix35.jpg', 'Sushi x35', '$12.500')">
+                <h3>Sushi x35</h3>
+                <p class="price">$12.500</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+            <div class="sushisection">
+                <img src="imagen/ebiroll.jpg" alt="ebiroll" onclick="openModal('imagen/ebiroll.jpg', 'Ebi Roll', '$5.970')">
+                <h3>Ebi Roll</h3>
+                <p class="price">$5.970</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+            <div class="sushisection">
+                <img src="imagen/ebiolivo.jpg" alt="ebiolivo" onclick="openModal('imagen/ebiolivo.jpg', 'Ebi Olivo', '$5.970')">
+                <h3>Ebi Olivo</h3>
+                <p class="price">$5.970</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+            <div class="sushisection">
+                <img src="imagen/lomoroll.jpg" alt="lomoroll" onclick="openModal('imagen/lomoroll.jpg', 'Lomo Roll', '$5.790')">
+                <h3>Lomo Roll</h3>
+                <p class="price">$5.790</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+            <div class="sushisection">
+                <img src="imagen/oriental.jpg" alt="orientalsushi" onclick="openModal('imagen/oriental.jpg', 'Oriental Sushi', '$6.500')">
+                <h3>Oriental Sushi</h3>
+                <p class="price">$6.500</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div class="modal-info">
+            <h3 id="modalTitle"></h3>
+            <p id="modalPrice"></p>
+            
+            <button class="add-to-cart" onclick="addToCart()">Añadir al carrito</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sushi Delivery. Todos los derechos reservados.</p>
+    </footer>
+    <script src="form.js"></script>
+</body>
+</html>
